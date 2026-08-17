@@ -9,5 +9,8 @@ def main():
     p = (width * 2)+(5 * 2)
     print("Perimeter:", p)
 
+    a = (5 * width)
+    print("Area:", a)
+
 if __name__ == "__main__":
         main()
