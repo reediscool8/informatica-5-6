@@ -12,5 +12,8 @@ def main():
     a = (5 * width)
     print("Area:", a)
 
+    d = ((width*width + 5*5)**.5)
+    print("Diagonal:", d)
+
 if __name__ == "__main__":
         main()
