@@ -4,8 +4,8 @@ def main():
     s = int(input("What do you have left in soles? "))
     r = int(input("What do you have left in reais? "))
 
-    U = (p * .00032) + (s * .30) + (r * .19)
-    M = (p * .0054) + (s / 5.07) + (r / 3.28)
+    U = round((p * .00032) + (s * .30) + (r * .19), 2)
+    M = round((p * .0054) + (s / 5.07) + (r / 3.28), 2)
 
     print("USD:", U)
     print("MXN:", M)
