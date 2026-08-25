@@ -1,6 +1,6 @@
 def main():
     print("Krusty Crab")
-    rating  = int(input("Please rate 0-5:  "))
+    rating  = float(input("Please rate 0-5:  "))
 
     if rating > 4.5:
         print("Perfection")
