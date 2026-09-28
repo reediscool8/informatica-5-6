@@ -1,28 +1,27 @@
 
+
 def main():
-  def main():
-    while True:
-        user_input = input("Enter a number (1-10): ")
+        nums = []
+        for i in range(1,11):
+             nums.append(str(i))
+        while True:
+            times_table = input("Enter a number 1-10: ").lower().strip()
+            if times_table == "exit":
+                 break
+            elif times_table in nums:
+                print(f"Here is the {times_table} times table. ")
 
-        try:
-            num = int(user_input)
-            if 1 <= num <= 10:
-                print(f"\nHere is the {num} times table:")
-                for i in range(1, 11):
-                    result = i * num
-                    print(f"{i} times {num} is {result}")
-                break  # Stops the loop after successfully printing the table
+                for x in range(1,11):
+                    result = int(times_table) * x
+                    print(f"{x} times {times_table} is {result}")
+
             else:
-                print("Please enter a number between 1 and 10.")
-        except ValueError:
-            print("Invalid input. Please enter a valid number.")
-
-if __name__ == "__main__":
-    main()
-
+                 print("Bad boy")
 
 
 if __name__ == "__main__":
     main()
+
+
 
 
