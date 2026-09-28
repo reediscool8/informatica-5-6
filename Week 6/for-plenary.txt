@@ -1,0 +1,12 @@
+1. Write a description for a while loop.
+A while loop is a loop that continues as long as a condition
+is met.  It is generally used for loops that you know how many times
+you want it to repeat.
+
+2. Write a description for a for loop.
+A loop that you dont know how many times it will repeat, it will
+go on unless you say the break word
+
+3. Compare a while loop to a for loop.
+While will keep going until something is true, and the for will go as long as the user wants it to
+they have different use cases and are both useful
