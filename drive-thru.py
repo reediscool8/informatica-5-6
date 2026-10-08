@@ -65,3 +65,32 @@ def binary_to_decimal(binary):
 
 if __name__ == "__main__":
     main()
+
+
+
+
+def main():
+    binary = input("Enter a binary number: ")
+    binary_to_decimal(binary)
+
+
+def binary_to_decimal(binary):
+    decimal = 0
+    is_binary = 1
+
+    for digit in binary:
+        if digit == "0":
+            decimal = decimal * 2 + 0
+        elif digit == "1":
+            decimal = decimal * 2 + 1
+        else:
+            is_binary = 0
+
+    if is_binary == 1:
+        print(f"Decimal equivalent: {decimal}")
+    else:
+        print("Invalid input! Only 0s and 1s allowed.")
+
+
+if __name__ == "__main__":
+    main()
