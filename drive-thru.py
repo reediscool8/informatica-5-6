@@ -30,3 +30,38 @@ def get_item(order):
 
 if __name__ == "__main__":
     main()
+
+
+
+
+
+def main():
+    binary = input("Enter a binary number: ")
+    binary_to_decimal(binary)
+
+
+def binary_to_decimal(binary):
+    valid = True
+
+    # Check if input contains non-binary characters
+    for digit in binary:
+        if digit != "0" and digit != "1":
+            valid = False
+
+    if valid == True:
+        # Convert binary to decimal
+        decimal = 0
+        power = len(binary) - 1
+
+        for digit in binary:
+            if digit == "1":
+                decimal = decimal + (2**power)
+            power = power - 1
+
+        print(f"Decimal equivalent: {decimal}")
+    else:
+        print("Invalid input! Only 0s and 1s allowed.")
+
+
+if __name__ == "__main__":
+    main()
